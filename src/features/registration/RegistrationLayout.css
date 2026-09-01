@@ -1,0 +1,234 @@
+.registration {
+  min-height: 100dvh;
+  padding: var(--mobile-padding);
+  padding-bottom: calc(var(--mobile-padding) + env(safe-area-inset-bottom, 0px));
+  background-color: var(--color-background);
+}
+
+.registration__container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-2) 0 var(--space-4);
+}
+
+.registration__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.registration__step {
+  margin: var(--space-1) 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.registration__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.registration__subtitle {
+  margin: 0;
+  max-width: 42ch;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.registration__body {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.registration__body--split {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .registration__body--split {
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    align-items: start;
+  }
+}
+
+.registration__main,
+.registration__aside {
+  padding: var(--space-2);
+  border-radius: var(--radius-card);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 16px rgba(23, 50, 77, 0.06);
+}
+
+.registration__aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.registration__aside-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.registration__banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-control);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.registration__banner--error {
+  background-color: rgba(217, 45, 32, 0.08);
+  color: var(--color-error);
+}
+
+.registration__banner--warning {
+  background-color: rgba(181, 71, 8, 0.08);
+  color: var(--color-warning);
+}
+
+.registration__banner--info {
+  background-color: rgba(15, 118, 110, 0.08);
+  color: var(--color-secondary);
+}
+
+.registration__sticky {
+  position: sticky;
+  bottom: 0;
+  margin: var(--space-2) calc(-1 * var(--mobile-padding)) 0;
+  padding: var(--space-2) var(--mobile-padding) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(180deg, rgba(247, 249, 252, 0) 0%, var(--color-background) 24%);
+}
+
+@media (min-width: 900px) {
+  .registration__sticky {
+    position: static;
+    margin: var(--space-2) 0 0;
+    padding: 0;
+    background: none;
+  }
+}
+
+.registration__submit {
+  width: 100%;
+  min-height: var(--cta-height);
+}
+
+.registration__btn-icon {
+  animation: registration-spin 0.9s linear infinite;
+}
+
+.registration__footer {
+  margin-top: var(--space-3);
+  text-align: center;
+}
+
+.registration__footer p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.registration__link {
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.registration__location-actions {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.registration__location-btn {
+  width: 100%;
+  min-height: var(--touch-min);
+}
+
+.registration__location-note {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.registration__location-status {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.registration__location-status--success {
+  color: var(--color-success);
+}
+
+.registration__location-status--error {
+  color: var(--color-error);
+}
+
+.registration__otp-info {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.registration__otp-timer {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.registration__otp-expired {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-error);
+}
+
+.registration__resend,
+.registration__back {
+  width: 100%;
+}
+
+.registration__back {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-align: center;
+}
+
+@keyframes registration-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

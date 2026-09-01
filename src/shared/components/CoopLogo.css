@@ -1,0 +1,7 @@
+.coop-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-card);
+  box-shadow: 0 8px 24px rgba(23, 50, 77, 0.1);
+}

@@ -1,0 +1,100 @@
+{
+  "splash": {
+    "appName": "Co-opServe",
+    "tagline": "Verified local services, powered by cooperatives.",
+    "loading": "Restoring your session…",
+    "ready": "Ready to serve your community.",
+    "continue": "Get Started",
+    "errorTitle": "Unable to start",
+    "errorMessage": "We couldn't restore your session. Please check your connection and try again.",
+    "retry": "Retry"
+  },
+  "auth": {
+    "title": "Welcome back",
+    "subtitle": "Sign in to access verified local services.",
+    "tabs": {
+      "password": "Password",
+      "otp": "Email OTP"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "otp": "One-time password",
+      "name": "Full name",
+      "phone": "Phone number"
+    },
+    "otp": {
+      "sentTo": "We sent a code to {{email}}",
+      "expiresIn": "Code expires in {{time}}"
+    },
+    "actions": {
+      "login": "Login",
+      "loggingIn": "Logging in…",
+      "continue": "Continue",
+      "verifyOtp": "Verify & Continue",
+      "verifying": "Verifying…",
+      "sendingOtp": "Sending code…",
+      "resendOtp": "Resend code",
+      "changeEmail": "Use a different email",
+      "demoLogin": "Demo Login",
+      "register": "Register",
+      "backToLogin": "Back to login"
+    },
+    "register": {
+      "prompt": "New to Co-opServe?"
+    },
+    "errors": {
+      "offline": "You appear to be offline. Check your connection and try again.",
+      "otpExpired": "This code has expired. Resend a new code to continue."
+    }
+  },
+  "registration": {
+    "stepLabel": "Step {{current}} of {{total}}",
+    "haveAccount": "Already have an account?",
+    "fields": {
+      "confirmPassword": "Confirm password",
+      "address": "Service address",
+      "addressPlaceholder": "House no., street, area, city"
+    },
+    "step1": {
+      "title": "Create your account",
+      "subtitle": "Join Co-opServe to book verified local services from cooperatives.",
+      "otpTitle": "Verify your email",
+      "otpSubtitle": "Enter the 6-digit code sent to your email to activate your account."
+    },
+    "step2": {
+      "title": "Add your service location",
+      "subtitle": "Tell us where you need services so we can match you with nearby verified workers.",
+      "asideTitle": "Find workers near you",
+      "locationHelp": "Your location helps us surface nearby verified cooperative workers. Only your service address text is saved to your profile.",
+      "gpsDisclaimer": "GPS coordinates are used temporarily on this device to suggest an address. They are not stored in your customer profile.",
+      "addressNote": "Only your written service address is saved to your profile.",
+      "addressHint": "Include landmarks or flat details to help workers reach you.",
+      "locationDetected": "Location detected. Review and edit the address below before continuing.",
+      "permissionDenied": "Location permission denied. Enter your service address manually instead.",
+      "locationUnavailable": "Current location is unavailable. Enter your service address manually instead."
+    },
+    "actions": {
+      "continue": "Continue",
+      "verifyAndContinue": "Verify & Continue",
+      "backToDetails": "Back to account details",
+      "creatingAccount": "Creating account…",
+      "useCurrentLocation": "Use Current Location",
+      "enterManually": "Enter Address Manually",
+      "locating": "Getting location…",
+      "completeRegistration": "Complete Registration",
+      "saving": "Saving profile…"
+    }
+  },
+  "roles": {
+    "customer": "Customer",
+    "worker": "Worker",
+    "cooperative_admin": "Cooperative Admin"
+  },
+  "placeholders": {
+    "welcome": "Welcome to Co-opServe",
+    "customerHome": "Customer Home",
+    "workerHome": "Worker Home",
+    "adminHome": "Cooperative Admin Home"
+  }
+}

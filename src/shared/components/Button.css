@@ -1,0 +1,49 @@
+.coop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch-min);
+  min-width: var(--touch-min);
+  padding: 0 var(--space-2);
+  border-radius: var(--radius-control);
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.coop-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.coop-btn--primary {
+  min-height: var(--cta-height);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.coop-btn--primary:hover:not(:disabled) {
+  background-color: #1f4266;
+}
+
+.coop-btn--secondary {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-border);
+}
+
+.coop-btn--secondary:hover:not(:disabled) {
+  background-color: var(--color-background);
+}
+
+.coop-btn--ghost {
+  background-color: transparent;
+  color: var(--color-secondary);
+}
+
+.coop-btn--ghost:hover:not(:disabled) {
+  background-color: rgba(15, 118, 110, 0.08);
+}
